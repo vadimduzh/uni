@@ -1,11 +1,12 @@
-def decimal_to_base(x, base):
-    res = 0
+def count_ones(x):
+    count = 0
     while x > 0:
-        x = x // base
-        if x != 0:
-            res += 1
-    return res
+        if x % 2 != 0:
+            count += 1
+        x = x // 2
+    return count
 
 
-value = decimal_to_base(5, 2)
+n = int(input(""))
+value = count_ones(n)
 print(value)
