@@ -1,15 +1,10 @@
-a = 10
-b = 20
-a, b = b, a
-print(a, b)
+n_1 = int(input())
+n_2 = int(input())
 
-# while(b%=a) swap(a,b);
-while b := b % a:
-    b, a = a, b
+print(n_1)
+n_2 = int(n_2)
 
-
-def gcd(a, b):
-    while b != 0:
-        b = b % a
-        b, a = a, b
-    return a
+if n_1>n_2:
+    print(">")
+else:
+    print("<")
