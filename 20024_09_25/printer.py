@@ -1,10 +1,10 @@
 n, x, y = [int(s) for s in input("").split()]
 
-res = 0
+total_time = 0
 if n == 1:
-    res = min(x, y)
+    total_time = min(x, y)
 else:
-    res = min(x, y)
+    total_time = min(x, y)
 
     left = 0
     right = max(x, y) * (n - 1)
@@ -17,5 +17,5 @@ else:
         else:
             right = mid
 
-    res += left
-print(res)
+    total_time += left
+print(total_time)
