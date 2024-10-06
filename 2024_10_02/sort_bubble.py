@@ -4,7 +4,7 @@ import time
 # n = int(input())
 # lst = [int(s) for s in input().split()]
 
-lst = [random.randint(1, 10) for i in range(32000)]
+lst = [random.randint(1, 10) for i in range(1000)]
 n = len(lst)
 
 start = time.time()
